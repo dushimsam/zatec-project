@@ -1,0 +1,135 @@
+.card {
+  width: 100%;
+  height: 100%;
+  // background-color: #fff;
+  border-radius: 3em;
+  border: 1px solid #e9e1e1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+    border: 2px solid black;
+  }
+}
+
+.scrollableTable {
+  height: 400px;
+  overflow: auto;
+}
+
+.newGenreCard {
+  width: 100%;
+  height: 70%;
+  border: 2px dashed #e0e0e0;
+  border-radius: 3em;
+  padding: 1em;
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.cardBtn {
+  border: 2px solid #000;
+  border-radius: 50%;
+  background-color: #000;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.viewMore {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+/* Small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+  .card {
+    font-size: 0.6em;
+  }
+
+  .newGenreCard {
+    height: 50%;
+    font-size: 0.6em;
+  }
+
+  .cardBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 0.6em;
+  }
+
+  .viewMore {
+    font-size: 0.6em;
+  }
+}
+
+/* Medium screens (601px to 960px) */
+@media only screen and (min-width: 601px) and (max-width: 960px) {
+  .card {
+    font-size: 0.7em;
+  }
+
+  .newGenreCard {
+    height: 60%;
+    font-size: 0.7em;
+  }
+
+  .cardBtn {
+    width: 50px;
+    height: 50px;
+    font-size: 0.7em;
+  }
+
+  .viewMore {
+    font-size: 0.7em;
+  }
+}
+
+/* Large screens (961px and up) */
+@media only screen and (min-width: 961px) {
+  .card {
+    font-size: 0.8em;
+  }
+
+  .newGenreCard {
+    height: 70%;
+    font-size: 0.8em;
+  }
+
+  .cardBtn {
+    width: 60px;
+    height: 60px;
+    font-size: 0.8em;
+  }
+
+  .viewMore {
+    font-size: 0.8em;
+  }
+}

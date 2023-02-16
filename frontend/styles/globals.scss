@@ -1,0 +1,212 @@
+@import "variables";
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../public/fonts/Larsseit.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Larsseit";
+    src: url("../public/fonts/Larsseit-Medium.woff") format("woff");
+    font-weight: bold;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+    background-color: $bg;
+    position: relative;
+}
+.root-page {
+    animation-name: rootPage;
+    animation-duration: 1s;
+}
+
+._popover {
+    width: 300px;
+    display: block;
+    height: 200px;
+}
+
+@keyframes rootPage {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+a {
+    color: gray;
+    cursor: pointer;
+}
+.text-sm {
+    font-size: 14px;
+}
+
+.button {
+    i {
+        font-size: 25px;
+    }
+    cursor: pointer;
+}
+
+.body {
+    color: #323232;
+    font-size: 15px;
+    font-family: "Mukti Narrow", sans-serif;
+    font-weight: 300;
+}
+.actions {
+    border-top: 1px solid darkgray;
+}
+.btn-side {
+    transition: 0.4s;
+}
+.btn-side:hover {
+    background-color: white;
+    color: $primaryColor !important;
+}
+
+._color-primary {
+    color: $primaryColor;
+}
+._input {
+    width: 450px;
+}
+
+label {
+    color: gray;
+    font-size: 14px;
+}
+._btn {
+    background-color: $primaryColor;
+}
+._bg-primary {
+    background-color: $primaryColor;
+}
+._date {
+    color: gray;
+    font-weight: 300;
+}
+._avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+._comment {
+    background-color: #eee;
+}
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.right_bar {
+    top: 80px;
+}
+
+._bg-light-gray {
+    background-color: $bg;
+}
+
+select.form-control {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+._navbar-avatar {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+._profile-actions {
+    position: sticky;
+    top: 76px;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.error {
+    background-color: red; /* Black background color */
+}
+
+#snackbar.success {
+    background-color: green; /* Black background color */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+    /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+    However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+body {
+    overflow-y: scroll;
+}
+
+@keyframes fadein {
+    from {
+        bottom: 0;
+        opacity: 0;
+    }
+    to {
+        bottom: 30px;
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}
+
+@keyframes fadeout {
+    from {
+        bottom: 30px;
+        opacity: 1;
+    }
+    to {
+        bottom: 0;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,112 @@
+.card {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  height: 15em;
+  width: 13em;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.cardTitle{
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.cardText{
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #b3b3b3;
+}
+.cardImage {
+  position: relative;
+  width: 13em;
+  height: 11em;
+}
+
+
+
+.newAlbumCard{
+    width: 150px;
+    height: 150px;
+    border: 2px dashed #e0e0e0;
+    border-radius: 3em;
+    padding: 1em;
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover{
+        transform: scale(1.05);
+    }
+}
+
+
+/* Small screens (up to 600px) */
+@media only screen and (max-width: 600px) {
+    .image {
+      width: 100%;
+      height: auto;
+      border-radius: 2em;
+    }
+    .cardImage {
+      position: relative;
+      width: 100%;
+      height: 4em;
+    }
+
+    .card{
+      height: 11em;
+    }
+    
+    .newAlbumCard {
+      width: 100px;
+      height: 100px;
+      border-radius: 2em;
+      padding: 0.5em;
+      margin: 0.5em;
+    }
+  }
+  
+  /* Medium screens (601px to 960px) */
+  @media only screen and (min-width: 601px) and (max-width: 960px) {
+    .image {
+      width: 100%;
+      height: auto;
+      border-radius: 2.5em;
+    }
+    
+    .newAlbumCard {
+      width: 120px;
+      height: 120px;
+      border-radius: 2.5em;
+      padding: 0.75em;
+      margin: 0.75em;
+    }
+  }
+  
+  /* Large screens (961px and up) */
+  @media only screen and (min-width: 961px) {
+    .image {
+      width: 100%;
+      height: 100%;
+      border-radius: 3em;
+    }
+    
+    .newAlbumCard {
+      width: 150px;
+      height: 150px;
+      border-radius: 3em;
+      padding: 1em;
+      margin: 1em;
+    }
+  }
+  

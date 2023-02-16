@@ -1,0 +1,122 @@
+
+
+.footer {
+  min-height: 182px;
+  background-color: #51288d;
+  padding: 38px 0px;
+
+  .divs {
+    padding-left: 102px;
+    margin: 0;
+  }
+
+  .hr {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .logo {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 36px;
+
+    color: #FFFFFF;
+  }
+
+  .link {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+    margin: auto;
+
+    color: #FFFFFF;
+  }
+
+  .smallLink {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 13px;
+    margin: 42px auto auto;
+    color: rgba(255, 255, 255, 0.68);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sectionOne {
+    padding-bottom: 100px;
+  }
+  .sectionTwo {
+    padding: 50px 10px 0px;
+
+    .__subtitle {
+      margin-bottom: 45px;
+    }
+
+    .___scontainer {
+      width: 100%;
+    }
+  }
+  .sectionThree {
+    margin-top: 45px;
+    padding: 12px 24px;
+
+    ._s_container {
+      width: 100%;
+    }
+
+    ._s_button {
+      width: 45%;
+    }
+
+    ._long_button {
+      width: 100%;
+    }
+
+    ._s_title {
+      font-size: 25px;
+    }
+
+    .img {
+      margin-top: 45px;
+    }
+  }
+  .sectionFive {
+    ._f_container {
+      width: 100%;
+    }
+
+    ._f_title {
+      font-size: 20px;
+      margin-top: 50px;
+      margin-bottom: 3px;
+    }
+
+    ._f_subtitle {
+      font-size: 12px;
+      margin-bottom: 15px;
+    }
+  }
+  .sectionSix {
+    ._six_title {
+      margin-top: 50px;
+      font-size: 25px;
+    }
+  }
+  .footer {
+    .link {
+      margin-top: 16px;
+    }
+
+    .divs {
+      padding-left: 12px;
+      margin: 0;
+    }
+  }
+}

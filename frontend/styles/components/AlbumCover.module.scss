@@ -1,0 +1,33 @@
+.image {
+  width: 15em;
+  height: 15em;
+}
+.title {
+  font-size: 3em;
+}
+
+
+/* Mobile Devices */
+@media (max-width: 576px) {
+    .image {
+      width: 10em;
+      height: 10em;
+    }
+    
+    .title {
+      font-size: 2em;
+    }
+  }
+  
+  /* iPad */
+  @media (min-width: 577px) and (max-width: 1024px) {
+    .image {
+      width: 12em;
+      height: 12em;
+    }
+    
+    .title {
+      font-size: 2.5em;
+    }
+  }
+  

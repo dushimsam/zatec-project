@@ -1,0 +1,52 @@
+.appNav{
+  padding: 43px 39px 44px  43px;
+}
+.link{
+  font-family: Inter, ui-monospace;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  margin: auto;
+cursor: pointer;
+  color: #FFFFFF;
+
+}
+.search{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo{
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 39px;
+  line-height: 47px;
+margin-right: 84px;
+  color: #FFFFFF;
+
+}
+.button{
+  font-family: Inter, sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 13px;
+  line-height: 16px;
+  min-width: 160px;;
+  max-width: 214px;
+  margin: auto;
+  height: 39px;
+  border: none;
+  background-color: #FFFFFF;
+  color: #1A4894;
+}
+
+.outlined{
+  border: 2px solid #FFFFFF;
+  background-color: transparent;
+  color: #FFFFFF;
+  width: 214px;
+  align-items: center;
+}

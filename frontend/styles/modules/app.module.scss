@@ -1,0 +1,70 @@
+@import "styles/variables";
+
+.navbar {
+    background-color: white;
+    height: 80px;
+    box-shadow: 0 3px 6px #0000000d;
+    a {
+        color: gray;
+        padding-right: 30px;
+    }
+    input {
+        width: 500px;
+        background-color: #fafafa;
+    }
+}
+
+.logo {
+    font-family: Montserrat, sans-serif;
+    font-style: normal;
+    font-size: x-large;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+.list {
+    font-weight: 400;
+    color: gray;
+    position: sticky;
+    top: 80px;
+    li {
+        padding-top: 3px;
+    }
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        li ul {
+            list-style-position: outside;
+            padding-left: 20px;
+            font-weight: 300;
+        }
+    }
+    a {
+        color: gray;
+    }
+}
+
+//.topic {
+//    background-color: $primaryColor;
+//}
+
+.btnPost{
+    margin: 10px 0;
+    padding: 15px;
+    width: 100%;
+    border-radius: 2em;
+    border: 0.1px solid black;
+    font-weight: bold;
+    background-color: $primaryColor;
+}
+
+.postContainer{
+    flex-grow: 1;
+    flex-basis: 300px;
+    position: sticky;
+    top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

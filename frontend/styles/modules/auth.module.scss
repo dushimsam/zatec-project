@@ -1,0 +1,12 @@
+@import "../variables";
+h1.test {
+    color: red !important;
+    text-align: center;
+}
+.right_bar {
+    height: 94vh;
+    background-color: $primaryColor;
+    .btn-side {
+        background-color: red;
+    }
+}
